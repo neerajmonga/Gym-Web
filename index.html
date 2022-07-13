@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>harry'fitness</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<style>
+/* css reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+  
+    background: url("img/bg.jpg");
+    /* height: 454px; */
+    /* background-size: cover;
+    /* background-position: center; */
+    /* background-repeat: no-repeat;  */
+    color: white;
+}
+.left{
+    display: inline-block;
+    /* border: 2px solid red; */
+    position: absolute;
+    left: 34px;
+    top: 10px;
+}
+.left img{
+   width: 85px; 
+   
+   /* filter: invert(100%); */
+}
+.left div{
+   text-align: center;
+   font-size: 12px;
+}
+.mid{
+    display: block;
+    width: 33%;
+    margin: 20px auto;
+    /* border: 2px solid green; */
+}
+/* .navbar{
+    
+    display: inline-block;
+} */
+.right{ 
+    position: absolute;
+    right: 34px;
+    top: 20px;
+    display: inline-block;
+    /* border: 2px solid #fff; */
+    
+}
+
+.navbar{
+    display: inline-block;
+}
+.navbar li{ 
+    display: inline-block;
+    font-size: 17px;
+}
+.navbar li a{
+    color: white;
+    text-decoration: none;
+    padding: 34px 12px;
+}
+.navbar li a:hover, .navbar li a.active {
+    text-decoration: underline;
+    color: gray;
+}
+.btn{
+     padding: 5px 15px; 
+    border-radius: 30px;
+    border: 2px solid #fff;
+    background-color: transparent;
+    color: white;
+    font-weight: 600;
+    transition: .2s ease-in-out;
+    margin: 0px 9px;
+    font-size: 14px;
+    cursor: pointer; 
+
+    
+}
+
+.btn:hover{
+    background-color: black;
+}
+.btnSubmit{
+    display: block;
+    color: #fff;
+    padding: 10px 20px;
+    background-color: transparent;
+    margin: auto;
+    width: 420px;
+    border-radius: 14PX;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1.3rem;
+    transition: .3s ease-in-out;
+}
+
+.btnSubmit:hover{
+    background-color: rgba(255, 0, 0, 0.548);
+    color: #fff;
+}
+/* .btnDiv{
+    border: 2px solid red;
+    padding: auto;
+} */
+ .container {
+
+    border: 2px solid wheat;
+    margin: 106px 100px;
+    padding: 55px; 
+    width: 420px;
+    border-radius: 30px;
+    font-size: 6px;   
+ }
+
+
+ .from-group input{
+    text-align: center;
+    display: block;
+    width: 410px;
+    padding: 3px;
+    border: 3px solid black;
+    margin: 10px auto;
+    font-size: 20px;
+    border-radius: 15px;
+ }
+ .container h1{
+    text-align: center;
+ }
+</style>
+<body>
+    <header class="header">
+      <!-- left box for logo   -->
+     <div class="left">
+       <img src="img/ll.png" alt="">
+       <div> Harry Fitnaess</div>
+     </div>
+        <!-- mid box for navbar -->
+            <div class="mid">
+                <ul   class="navbar">
+                    <li><a href="#"class="active">Home</a></li>
+                    <li><a href="#">Aboust Us</a></li>
+                    <li><a href="#">Fitness calculator</a></li>
+                    <li><a href="#">Contact</a></li>
+              </ul>   
+            </div>
+        
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+     <h1>Join tha best gym of delhi now</h1>
+     <form action="noaction.php">
+         <div class="from-group">
+             <input type="text" name="texbox"  placeholder="Enter your Name" >
+        </div>
+         <div class="from-group">
+             <input type="text" name="texbox"  placeholder="Enter your Age" >
+        </div>
+         <div class="from-group">
+             <input type="text" name="texbox"  placeholder="Enter your Gander" >
+        </div>
+         <div class="from-group">
+             <input type="text" name="texbox"  placeholder="Enter your locality" >
+        </div>
+        <button class="btnSubmit">submit</button>
+      </form>
+     </div>
+</body>
+
+</html>
